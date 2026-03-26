@@ -1,39 +1,78 @@
 # AI Customer Support Automation System
 
-## Overview
+An AI-powered system that automates customer support by answering user questions from company documents using a local RAG pipeline.
 
-This project is a local document-based customer support assistant built with a Retrieval-Augmented Generation pipeline.
+---
 
-It uses:
-- FAISS for retrieval
-- local embeddings
-- LM Studio as the local inference server
+## Problem
 
-The system can answer support questions based on uploaded company documents in a privacy-friendly local environment.
+Customer support teams spend significant time answering repetitive questions such as order status, returns, and refunds.
 
-## Features
+This leads to:
+- High operational cost  
+- Slow response times  
+- Poor customer experience  
 
-- PDF-based question answering
-- Local inference with LM Studio
-- Vector search with FAISS
-- Streamlit chat interface
-- Privacy-friendly architecture
+---
 
-## Project Structure
+## Solution
 
-```text
-ai-customer-support-system/
-├── app/
-│   ├── main.py
-│   ├── rag.py
-│   ├── memory.py
-│   └── utils.py
-├── data/
-│   └── faq.pdf
-├── ui/
-│   └── app.py
-├── screenshots/
-├── README.md
-├── requirements.txt
-├── .env.example
-└── .gitignore
+This system automatically:
+
+- Understands user queries  
+- Retrieves relevant information from company documents  
+- Generates accurate, context-aware responses  
+
+All running in a **local environment**, ensuring full data privacy.
+
+---
+
+## Key Features
+
+- Document-based question answering  
+- Local LLM integration (LM Studio)  
+- Semantic search with vector database  
+- Chat interface (Streamlit)  
+- Privacy-friendly (no external APIs required)  
+
+---
+
+## Example Use Cases
+
+- E-commerce customer support automation  
+- Internal knowledge assistants  
+- FAQ automation systems  
+- Document search tools  
+
+---
+
+## Architecture
+Documents → Chunking → Embedding → Vector DB → Retrieval → LLM → Response
+
+
+---
+
+## Interface
+
+(Add screenshot here)
+
+![Demo](screenshots/demo.png)
+
+---
+
+## Tech Stack
+
+- Python  
+- LangChain  
+- FAISS  
+- Sentence Transformers  
+- LM Studio  
+- Streamlit  
+
+---
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run ui/streamlit_app.py
