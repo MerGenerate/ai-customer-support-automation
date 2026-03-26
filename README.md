@@ -56,7 +56,7 @@ Documents → Chunking → Embedding → Vector DB → Retrieval → LLM → Res
 
 (Add screenshot here)
 
-![Demo](screenshots/demo.png)
+![Demo](demo.png)
 
 ---
 
