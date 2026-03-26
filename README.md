@@ -54,7 +54,6 @@ Documents → Chunking → Embedding → Vector DB → Retrieval → LLM → Res
 
 ## Interface
 
-(Add screenshot here)
 
 ![Demo](demo.png)
 
